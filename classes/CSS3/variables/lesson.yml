@@ -1,0 +1,8 @@
+
+meta:
+  title: Zmienne CSS
+resources:
+  - type: article
+    id: variables
+    title: 'Zmienne CSS'
+    imageFile: vars.jpg

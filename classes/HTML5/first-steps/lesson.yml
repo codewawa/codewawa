@@ -1,0 +1,13 @@
+
+meta:
+  title: Pierwsze kroki
+resources:
+  - type: article
+    id: intro
+    title: Intro
+    imageFile: start.jpg
+
+  - type: article
+    id: semantics
+    title: Semantyka
+    imageFile: start.jpg

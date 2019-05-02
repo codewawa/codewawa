@@ -1,0 +1,8 @@
+meta:
+  title: HTML5
+  desc: Naucz się jak budować podstawowe witryny internetowe, dodawać hiperłącza oraz obrazki
+  color: '#e34f26'
+  imageUrl: 'https://www.w3.org/html/logo/downloads/HTML5_Badge.svg'
+lessons:
+  - first-steps
+  - second-steps

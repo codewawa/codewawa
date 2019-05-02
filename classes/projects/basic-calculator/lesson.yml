@@ -1,0 +1,23 @@
+
+meta:
+  title: Tworzenie prostego kalkulatora
+resources:
+  - type: article
+    id: intro
+    title: 'Wprowadznie, HTML & CSS'
+    imageFile: calc.jpg
+
+  - type: article
+    id: js-globals-display
+    title: 'JS: Zmienne globalne i wyświetlanie'
+    imageFile: calc.jpg
+
+  - type: article
+    id: js-buttons
+    title: 'JS: Przyciski'
+    imageFile: calc.jpg
+
+  - type: article
+    id: improvments
+    title: 'Możliwe ulepszenia'
+    imageFile: calc.jpg

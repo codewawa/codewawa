@@ -1,0 +1,7 @@
+meta:
+  title: Git
+  desc: Poznaj najpopularniejszy system kontroli wersji
+  color: '#FF1A00'
+  imageUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'
+lessons:
+  - introduction

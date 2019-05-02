@@ -1,0 +1,14 @@
+meta:
+    title: Podstawy
+resources:
+    - type: presentation
+      id: introduction-to-javascript
+      title: "Wprowadzenie do JavaScript'u [P]"
+      
+    - type: presentation
+      id: javascript-events
+      title: 'Javascript events [P][EN]'
+
+    - type: presentation
+      id: creating-first-javascript-project
+      title: 'Creating first Javascript project [P][EN]'

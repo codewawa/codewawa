@@ -1,0 +1,7 @@
+meta:
+  title: Projekty
+  desc: Poznasz, jak zastosować wiedzę teoretyczną w praktycznych projektach
+  color: '#34495e'
+  imageUrl: 'https://unsplash.com/photos/lCYoIM-fbuU/download'
+lessons:
+  - basic-calculator

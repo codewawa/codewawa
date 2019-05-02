@@ -1,0 +1,7 @@
+meta:
+  title: Wprowadzenie
+resources:
+  - type: article
+    id: what-is-git
+    title: Co to git?
+    imageFile: archive.jpg

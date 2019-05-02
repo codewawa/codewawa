@@ -1,0 +1,7 @@
+meta:
+  title: JS
+  desc: Naucz się podstaw interakcji z użytkownikiem
+  imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'
+  color: '#eee74b'
+lessons:
+  - basics
