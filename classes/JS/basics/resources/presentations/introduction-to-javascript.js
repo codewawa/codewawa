@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import WithSpectacle from '../../../../../src/utils/WithSpectacle';
 import 'prismjs'
 import 'prismjs/themes/prism.css'
@@ -62,9 +62,9 @@ export default props => (
         <Heading size={3} fit>Instrukcja warunkowa</Heading>
         <Appear>
            <PrismCode component="pre" className="language-javascript"> 
-  {`if(true)\{
+  {`if(true){
     doSomething();
-  }else\{
+  }else{
     doSomethingElse();
   }`}
   </PrismCode>
@@ -169,7 +169,7 @@ console.log(y + z); // ?
       </Slide>
       <Slide>
       <PrismCode component="pre" className="language-css"> 
-{`#element\{
+{`#element{
   font-size: 2em;
 }
 `}</PrismCode>

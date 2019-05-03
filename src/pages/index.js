@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "@emotion/styled";
@@ -68,23 +68,24 @@ const MoreButton = styled(Link)`
       width:calc(100% - 4em);
     }
 `
-export default props => (
-  <Layout location={props.location} title={'Codewawa'}>
-    <SEO
-      title="All posts"
-      keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-    />
-    <PageWrapper>
-    <VideoWrapper loop autoPlay>
-      <source src="/assets/coding.mp4" type="video/mp4" />
-      </VideoWrapper>
-    <Brand><span>Code</span><mark>wawa</mark></Brand>
-    <Description>
-      Projekt Pracowni Projektowania Stron Internetowych w Pałacu Młodzieży w Warszawie.
-    </Description>
-    <MoreButton to="/classes">
-      Zobacz kursy >
-    </MoreButton>
-    </PageWrapper>
-  </Layout>
-)
+export default props => {
+  return (
+    <Layout location={props.location} title={'Codewawa'}>
+      <SEO
+        title="Home"
+      />
+      <PageWrapper>
+      <VideoWrapper loop autoPlay>
+        <source src="/assets/coding.mp4" type="video/mp4" />
+        </VideoWrapper>
+      <Brand><span>Code</span><mark>wawa</mark></Brand>
+      <Description>
+        Projekt Pracowni Projektowania Stron Internetowych w Pałacu Młodzieży w Warszawie.
+      </Description>
+      <MoreButton to="/classes">
+        Zobacz kursy >
+      </MoreButton>
+      </PageWrapper>
+    </Layout>
+  )
+}

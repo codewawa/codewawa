@@ -1,4 +1,4 @@
-import React, { useEffect, Component } from 'react'
+import React, { Component } from 'react'
 import Layout from '../components/layout'
 import styled from '@emotion/styled'
 import ResourceLayout from '../components/ResourceLayout';
@@ -85,13 +85,8 @@ justify-content: center;
     }
   }
 `
-const Wrapper = styled.div`
-  // background:rgba(0,0,0,0.2);
-`
+
 export default class extends Component{
-  constructor(props){
-    super(props)
-  }
   componentDidMount(){
     Prism.highlightAll()
   }
@@ -103,21 +98,21 @@ export default class extends Component{
       title={resource.title}
     />
         <ResourceLayout class={resource.class} active={resource.id}>
-        <Wrapper>
+        <div>
         <Header color={resource.class.color}>
         <Category color={resource.class.color}>
           <span>
             <Link to={`/class/${resource.class.id}`}>{resource.class.title}</Link> / {resource.lesson.title}</span>
         </Category>
               <h1>{resource.title}</h1>
-              <img src={typeof window !== 'undefined' && window.URL.createObjectURL(new Blob([new Uint8Array(resource.image.data)]))} />
+             <img alt="" src={typeof window !== 'undefined' && window.URL.createObjectURL(new Blob([new Uint8Array(resource.image.data)]))} />
              
             
           </Header>
       <Content>
       <div dangerouslySetInnerHTML={{__html: resource.contents}}></div>
       </Content>
-      </Wrapper>
+     </div>
       </ResourceLayout>
       </Layout>
     )

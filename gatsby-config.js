@@ -16,6 +16,10 @@ module.exports = {
           {
             family: `Vampiro One`,
             subsets: [`latin-ext`],
+          },
+          {
+            family: `Montserrat`,
+            variants: [`400`, `700`]
           }
         ],
       },

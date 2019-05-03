@@ -88,6 +88,7 @@ export default class extends Component{
   }
   render = () => {
     const {resource} = this.props.pageContext
+    console.log(this.props)
     return (
       <Layout>
       <SEO
@@ -102,7 +103,7 @@ export default class extends Component{
               <Title>{resource.title}</Title>
        
         <RatioContainer>
-      <Presentation src={`${typeof window !== 'undefined' && this.props.pageContext.path}/present`} />
+      <Presentation src={`${typeof window !== 'undefined' && this.props.location.pathname}/present`} />
       </RatioContainer>
       </ContentWrapper>
       </ResourceLayout>

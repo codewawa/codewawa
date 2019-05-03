@@ -87,14 +87,14 @@ export default props => (
       <Slide align="center flex-start">
         <PrismCode component="pre" className="language-javascript">
       {`
-function(callback)\{
+function(callback)}
   let rand = Math.random()
-  if (typeof callback === 'function')\{
+  if (typeof callback === 'function')}
     callback(rand)
     return
-  \}
+  }
   throw 'Callback argument is not a function'
-  \}
+  }
 `}
 </PrismCode>
       </Slide>
@@ -102,9 +102,9 @@ function(callback)\{
       <Slide align="flex-start">
         <PrismCode component="pre" className="language-javascript">
           {`const btn = document.querySelector('button')
-btn.onclick = function()\{
+btn.onclick = function()}
   alert('Anyhow :( ')
-\}`}
+}`}
 </PrismCode>
 
 
@@ -114,9 +114,9 @@ btn.onclick = function()\{
               <Appear>
               <PrismCode component="pre" className="language-javascript">
             {`const btn = document.querySelector('button')
-btn.addEventListener('click', function()\{
+btn.addEventListener('click', function()}
   alert("I'm professional!");
-\})`}
+})`}
   </PrismCode>
       </Appear>
   </Fill>
@@ -127,9 +127,9 @@ btn.addEventListener('click', function()\{
             <Fill>
             <PrismCode component="pre" className="language-javascript">
             {`const btn = document.querySelector('button')
-btn.addEventListener('click', function(e)\{
+btn.addEventListener('click', function(e)}
   console.log(e)
-\})`}
+})`}
  </PrismCode>
   </Fill>
         </Layout>
@@ -139,9 +139,9 @@ btn.addEventListener('click', function(e)\{
             <Fill>
             <PrismCode component="pre" className="language-javascript">
             {`const btn = document.querySelector('button')
-function changeText()\{
+function changeText()}
   btn.innerText = 'clicked'
-\}
+}
 btn.addEventListener('click', changeText)`}
  </PrismCode>
   </Fill>
@@ -156,9 +156,9 @@ btn.addEventListener('click', changeText)`}
             <Fill>
             <PrismCode component="pre" className="language-javascript">
             {`const btn = document.querySelector('button')
-function changeText()\{
+function changeText()}
   btn.innerText = 'clicked'
-\}
+}
 btn.addEventListener('click', changeText)
 btn.removeEventListener('click', changeText)`
 }

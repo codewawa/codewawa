@@ -1,7 +1,7 @@
-import React, { Component, useState, useEffect } from 'react'
+import React from 'react'
 import styled from '@emotion/styled';
 import theme from '../theme'
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 const Navbar = styled.div`
     position: fixed;
     top:0;
@@ -27,25 +27,25 @@ const Brand = styled(Link)`
         color:${theme.colors.primary};
     }
 `
-const SearchInput = styled.input`
-    outline:none;
-    border:none;
-    background:transparent;
-    padding:5px 10px;
-    margin: 0 2em;
-    color:white;
-    font-family:Montserrat;
-    border-bottom:2px solid ${theme.colors.lightDark};
-    width:calc(40vw);
-    font-size:1.2em;
-    transition:.2s all;
-    &:focus{
-        border-bottom:1px solid ${theme.colors.primary};
-        border-top-left-radius:3px;
-        border-top-right-radius:3px;
-        background:${theme.colors.lightDark};
-    }
-`
+// const SearchInput = styled.input`
+//     outline:none;
+//     border:none;
+//     background:transparent;
+//     padding:5px 10px;
+//     margin: 0 2em;
+//     color:white;
+//     font-family:Montserrat;
+//     border-bottom:2px solid ${theme.colors.lightDark};
+//     width:calc(40vw);
+//     font-size:1.2em;
+//     transition:.2s all;
+//     &:focus{
+//         border-bottom:1px solid ${theme.colors.primary};
+//         border-top-left-radius:3px;
+//         border-top-right-radius:3px;
+//         background:${theme.colors.lightDark};
+//     }
+// `
 const VerticalCenter = styled.div`
     display: flex;
     align-items: center;
@@ -61,14 +61,14 @@ const NavLink = styled(Link)`
     }
 `
 export default (props) => {
-    const [searchQuery, setSearchQuery] = useState('')
-    let prevQuery = null
-    useEffect(() => {
-        if(prevQuery !== searchQuery && searchQuery){
-            prevQuery = searchQuery
-            navigate(`/search?q=${searchQuery}`)
-        }
-    })
+    // const [searchQuery, setSearchQuery] = useState('')
+    // let prevQuery = null
+    // useEffect(() => {
+    //     if(prevQuery !== searchQuery && searchQuery){
+    //         prevQuery = searchQuery
+    //         navigate(`/search?q=${searchQuery}`)
+    //     }
+    // })
     return (
         <Navbar>
             <VerticalCenter>

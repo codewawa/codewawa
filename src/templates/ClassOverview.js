@@ -1,4 +1,4 @@
-import React, { useEffect, Component } from 'react'
+import React from 'react'
 import Layout from '../components/layout'
 import styled from '@emotion/styled'
 import ResourceLayout from '../components/ResourceLayout';
@@ -52,13 +52,8 @@ user-select:none;
   }
   
 `
-export default class extends Component{
-  constructor(props){
-    super(props)
-  }
-  render(){
-    const _class = this.props.pageContext.class
-    console.log(this.props)
+export default props => {
+  const _class = props.pageContext.class
     return (
       <Layout>
         <SEO
@@ -87,6 +82,4 @@ export default class extends Component{
       </ResourceLayout>
       </Layout>
     )
-  }
 }
-

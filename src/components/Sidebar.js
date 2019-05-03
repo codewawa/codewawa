@@ -57,7 +57,7 @@ const Classes = styled(Scrollbars)`
   // overflow:scroll;
   height:100%;
 `
-const _Class = styled.details`
+const ClassDropDown = styled.details`
 margin:1em 0;
 
   & > summary{
@@ -111,7 +111,7 @@ export default props => {
             <Classes>
             {
               data.map(_class => (
-              <_Class>
+              <ClassDropDown>
                 <summary>{_class.title}</summary>
                 {
                 _class.childrenLessonData.map((lesson) => (
@@ -131,7 +131,7 @@ export default props => {
             </DropDown>
             ))
               }
-              </_Class>
+              </ClassDropDown>
               ))
             }
              </Classes>

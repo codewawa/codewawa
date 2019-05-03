@@ -61,15 +61,10 @@ const Card = styled(Link)`
 const PageHeader = styled.h1`
 color:hsla(0, 10%, 100%, 1);
 `
-export default class extends React.Component {
-    constructor(props){
-        super(props)
-    }
-  render() {
-    console.log(this.props)
-    const classes = this.props.data.allClassData.edges.map(x => x.node)
+export default props => {
+  const classes = props.data.allClassData.edges.map(x => x.node)
     return (
-      <Layout location={this.props.location} title={'Codewawa'}>
+      <Layout location={props.location} title={'Codewawa'}>
         <SEO
           title="Wszystkie kursy"
         />
@@ -80,7 +75,7 @@ export default class extends React.Component {
             classes.map(_class => (
                 <Card to={`/class/${_class.id.toLowerCase()}`}>
                     <div className="image-wrapper">
-                    <img src={_class.imageUrl}></img>
+                    <img alt="" src={_class.imageUrl}></img>
 
                     </div>
                     <div className="info">
@@ -94,9 +89,7 @@ export default class extends React.Component {
         </Container>
       </Layout>
     )
-  }
 }
-
 export const pageQuery = graphql`
        {
           allClassData {
