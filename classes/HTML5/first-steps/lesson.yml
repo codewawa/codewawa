@@ -8,6 +8,6 @@ resources:
     imageFile: start.jpg
 
   - type: article
-    id: semantics
+    id: html5-tags
     title: Semantyka
     imageFile: start.jpg
