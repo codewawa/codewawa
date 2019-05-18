@@ -103,7 +103,8 @@ exports.createPages = ({ graphql, actions }) => {
                     type,
                     id,
                     path,
-                    imageFile
+                    imageFile,
+                    embedUrl
                   }
                 }
               }
@@ -165,6 +166,27 @@ exports.createPages = ({ graphql, actions }) => {
                         resource: {
                           id: resource.id,
                           title: resource.title,
+                          class: {
+                           id: node.id,
+                           title: node.title,
+                           color: node.color
+                          },
+                          lesson: {
+                            title: lesson.title
+                          }
+                        }
+                      }
+                    })
+                    break;
+                    case 'embed':
+                    createPage({
+                      path: `/class/${resource.path}`,
+                      component: templateFor('Embed'),
+                      context: {
+                        resource: {
+                          id: resource.id,
+                          title: resource.title,
+                          embedUrl: resource.embedUrl,
                           class: {
                            id: node.id,
                            title: node.title,

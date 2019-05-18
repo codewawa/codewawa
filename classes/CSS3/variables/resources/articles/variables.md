@@ -1,4 +1,5 @@
 ﻿# Zmienne CSS
+
 ## Po co?
 W wielu językach programowania mamy zmienne. Są one bardzo pomocne i ułatwiają życie programiście. Dużo łatwiej jest zmienić wartość zmiennej w jednym miejscu niż zmieniać tą wartość w całym kodzie setki razy. Oprócz tego dzięki dowolnym nazw zmiennych, można dużo łatwiej zorientować się w kodzie. 
 ## Jak to działa?

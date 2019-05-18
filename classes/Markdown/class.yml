@@ -1,0 +1,7 @@
+meta:
+  title: Markdown
+  desc: Poznaj jeden z podstawowych formatów plików służacych do pisania w sieci
+  color: '#e67e22'
+  imageUrl: 'https://unsplash.com/photos/T-GjUWPW-oI/download?force=true'
+lessons:
+  - intro

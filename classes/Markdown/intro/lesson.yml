@@ -1,0 +1,8 @@
+
+meta:
+  title: Podstawy
+resources:
+  - type: article
+    id: quick-introduction
+    title: Szybkie wprowadzenie
+    imageFile: paper.jpg

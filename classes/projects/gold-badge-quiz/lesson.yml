@@ -1,0 +1,8 @@
+
+meta:
+  title: Quiz na temat Złotej Odznaki
+resources:
+  - type: embed
+    id: test
+    title: 'Przetestuj'
+    embedUrl: 'http://zlotaodznakaquiz.netlify.com'
