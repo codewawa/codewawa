@@ -25,16 +25,16 @@ const classesDirectory = './classes'
 
 exports.sourceNodes = async ({ actions }) => {
   const { createNode } = actions
-  yaml.safeLoad(fs.readFileSync(`./${classesDirectory}/classes.yml`, 'utf-8')).forEach(className => {
+  yaml.load(fs.readFileSync(`./${classesDirectory}/classes.yml`, 'utf-8')).forEach(className => {
     let dirName = `${classesDirectory}/${className}`
-    const classData = yaml.safeLoad(fs.readFileSync(`${dirName}/class.yml`, 'utf-8'))
+    const classData = yaml.load(fs.readFileSync(`${dirName}/class.yml`, 'utf-8'))
     const lessonsID = []
     console.log(classData)
   classData.lessons.forEach(lessonID => {
     lessonsID.push(lessonID)
-    const lessonData = yaml.safeLoad(fs.readFileSync(`${dirName}/${lessonID}/lesson.yml`, 'utf-8'))
+    const lessonData = yaml.load(fs.readFileSync(`${dirName}/${lessonID}/lesson.yml`, 'utf-8'))
     const resourcesID = []
-   
+
     lessonData.resources.forEach(resource => {
       let resourceID = `${className.toLowerCase()}/${lessonID}/${resource.id}`
       resourcesID.push(resourceID)
@@ -124,8 +124,8 @@ exports.createPages = ({ graphql, actions }) => {
             node.childrenLessonData.forEach(lesson => {
               if(lesson.childrenResourceData){
               lesson.childrenResourceData.forEach(resource => {
-                
-               
+
+
                   let filePath = `${classesDirectory}/${node.id}/${lesson.id}/resources/${resource.type}s/${resource.id.split('/').pop()}`
                   switch(resource.type){
                     case 'article':
@@ -200,13 +200,13 @@ exports.createPages = ({ graphql, actions }) => {
                     })
                     break;
                   }
-               
-            
+
+
               })
             }
             })
-                
-           
+
+
           }
 
           createPage({

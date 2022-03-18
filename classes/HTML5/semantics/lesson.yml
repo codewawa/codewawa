@@ -3,6 +3,6 @@ meta:
   title: Semantyka
 resources:
   - type: article
-    id: html5-tags
+    id: intro
     title: Nowe znaczniki w HTML5
     imageFile: code.jpg
