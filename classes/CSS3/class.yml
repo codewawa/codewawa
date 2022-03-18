@@ -2,6 +2,6 @@ meta:
   title: CSS3
   desc: Nauczysz się stylizować istniejące strony
   color: '#0060BA'
-  imageUrl: 'https://cdn.worldvectorlogo.com/logos/css3.svg'
+  imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png'
 lessons:
   - variables

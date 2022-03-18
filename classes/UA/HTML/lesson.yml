@@ -1,0 +1,8 @@
+
+meta:
+  title: Wstęp do HTML
+resources:
+  - type: article
+    id: html-for-beginners
+    title: 'HTML для дітей та початківців'
+    imageFile: html-code.jpg

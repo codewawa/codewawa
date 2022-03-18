@@ -13,6 +13,7 @@ const ResourceWrapper = styled.div`
 const ContentWrapper = styled.div`
     margin-left:${props => props.full ? '0' : '20vw'};
     width:${props => props.full ? '100%' : 'calc(100% - 20vw)'};
+    padding-bottom: 1rem;
     transition: .2s all;
     @media(max-width:1100px){
         margin-left:0;
@@ -57,7 +58,7 @@ const ResourceLayout = (props) => {
     return (
         <ResourceWrapper >
             <SidebarSwitch onClick={() => setOpen(!open)} open={open}
-            
+
             >
             <span dangerouslySetInnerHTML={{__html: '&rtrif;'}}>
 
